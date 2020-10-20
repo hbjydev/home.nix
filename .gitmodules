@@ -1,0 +1,3 @@
+[submodule "shell/nvim"]
+	path = shell/nvim
+	url = git@github.com:hbjydev/nvim.git

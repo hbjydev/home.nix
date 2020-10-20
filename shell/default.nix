@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  imports = [ ./zsh ./git ];
+  imports = [ ./direnv ./env.nix ./git ./zsh ];
+
   home.packages = with pkgs; [
     aria2
     atool

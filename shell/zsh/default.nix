@@ -15,6 +15,7 @@
       export EMAIL="hi@hbjy.dev"
 
       . "/home/hayden/.nix-profile/etc/profile.d/nix.sh"
+      eval "$(direnv hook zsh)"
     '';
 
     oh-my-zsh = {

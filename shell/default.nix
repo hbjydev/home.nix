@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  imports = [ ./direnv ./env.nix ./git ./zsh ];
+  imports = [ ./direnv ./env.nix ./git ./zsh ./tmux ./less ];
 
   home.packages = with pkgs; [
     aria2
@@ -25,6 +25,7 @@
     lshw
     mtools
     neofetch
+    niv
     nixops
     nmap
     ntfs3g
@@ -42,4 +43,6 @@
     wget
     zip
   ];
+
+  services.lorri.enable = true;
 }
